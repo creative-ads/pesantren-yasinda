@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --h50: #f0fdf4;
+  --h100: #dcfce7;
+  --h200: #bbf7d0;
+  --h300: #86efac;
+  --h400: #4ade80;
+  --h500: #22c55e;
+  --h600: #16a34a;
+  --h700: #15803d;
+  --h800: #166534;
+  --h900: #14532d;
+  --h950: #052e16;
+  --k500: #f59e0b;
+  --k400: #facc15;
+  --k300: #fbbf24;
+  --k250: #facc15;
+  --abu: #6b7280;
+}
+
+.main-content h1 {
+  font-size: 30px;
+  color: var(--h950);
+}
+.main-content h3 {
+  font-size: 20px;
+  color: var(--abu);
+}
+
+.animated-hr {
+  border: none;
+  height: 4px;
+  background-color: #000000; /* Warna terang */
+  box-shadow: 0 0 5px rgba(16, 177, 1, 0.6);
+  animation: moveLine 3s infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.cari {
+  display: flex;
+  justify-content: flex-end; /* Posisikan pencarian di sisi kanan */
+  margin: 20px; /* Tambahkan margin jika diperlukan */
+}
+
+/* Styling untuk form pencarian */
+.cari .form-control {
+  margin-right: 10px; /* Menambah jarak antara input dan tombol */
+  width: 250px; /* Lebar input pencarian */
+  height: 37px;
+  transition: width 0.4s ease; /* Transisi smooth saat diperbesar */
+}
+
+.btn-primary {
+  border: none;
+  margin-left: 10px; /* Menambah sedikit jarak pada tombol jika diperlukan */
+}
+
+.btn-primary:hover {
+  background-color: #172554;
+}
+
+.btn-secondary {
+  border: none;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #525252;
+}
+
+.cari .form-control:focus {
+  width: 300px; /* Lebar input pencarian saat fokus */
+}
+.d-flex {
+  display: flex;
+  gap: 5px; /* Atur jarak antar elemen di dalam form */
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  display: inline-block;
+  animation: spin 2s linear infinite; /* 2 detik untuk satu putaran */
+}
+
+/* -------------- TAMBAH SANTRI -----------*/
+/* -------------- TAMBAH SANTRI -----------*/
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul form */
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--h950);
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 10px;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color:var(--h900);
+    font-weight: 600;
+}
+
+/* Input text dan number */
+.form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--h700);
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--h500);
+}
+
+/* Input file */
+.form-control-file {
+    display: block;
+    margin-top: 8px;
+}
+
+/* Tombol submit */
+.btn-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--h600);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: 600;
+}
+
+.btn-submit:hover {
+    background-color: var(--h800);
+    
+}
+
+.btn-danger {
+    background-color: #a855f7;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #7e22ce;
+}
+
+.btn-info {
+    background-color: red;
+    color: white;
+    border: none;
+}
+.btn-info:hover {
+    color: white;
+    background-color: #991b1b;
+}
+.btn-success {
+    background-color: #22c55e;
+    border: none;
+}
+.btn-success:hover {
+    background-color: #15803d;
+}
+
+.btn-warning {
+    color: white;
+    border: none;
+}
+.btn-warning:hover {
+    background-color: #d97706;
+    color: white;
+}
+.btn-dark {
+    background-color: #f43f5e;
+    border: none;
+}
+.btn-dark:hover {
+    background-color: #be123c;
+}

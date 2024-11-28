@@ -1,0 +1,103 @@
+:root {
+    --h50: #f0fdf4;
+    --h100: #dcfce7;
+    --h200: #bbf7d0;
+    --h300: #86efac;
+    --h400: #4ade80;
+    --h500: #22c55e;
+    --h600: #16a34a;
+    --h700: #15803d;
+    --h800: #166534;
+    --h900: #14532d;
+    --h950: #052e16;
+    --k400: #fbbf24;
+  }
+  
+.content-santri {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.animated-hr {
+    border: none;
+    height: 4px;
+    background-color: #ffb109; /* Warna terang */
+    box-shadow: 0 0 5px rgba(16, 177, 1, 0.6);
+    animation: moveLine 5s infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.anm-hr {
+    border: none;
+    height: 4px;
+    background-color: #32c505; /* Warna terang */
+    box-shadow: 0 0 5px rgba(249, 125, 0, 0.6);
+    animation: moveRightToLeft 5s linear infinite; /* Animasi bergerak */
+}
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%); /* Mulai dari kanan (di luar layar) */
+    }
+    100% {
+        transform: translateX(0); /* Berakhir di posisi normal */
+    }
+}
+
+.content-santri h1 {
+    font-weight: bold;
+}
+.content-santri .hone {
+    font-weight: bold;
+    text-align: center;
+    color: transparent;
+    cursor: default;
+    background: linear-gradient(45deg, #08ff18, #ffe203, #02721e, #83fb02);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+.container .carousel-img {
+    max-width: 90%; /* Membatasi ukuran gambar agar tidak terlalu besar */
+    height: auto;
+    border-radius: 15px; /* Menambahkan border radius */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Menambahkan shadow */
+    margin: 0 auto; /* Memusatkan gambar */
+    display: block;
+}
+
+.container .custom-caption {
+    background-color: rgba(0, 0, 0, 0.135); /* Memberikan latar belakang gelap pada teks */
+    padding: 10px;
+    border-radius: 10px; /* Membuat sudut teks membulat */
+}
+
+.container .custom-caption h5,
+.container .custom-caption p {
+    font-weight: 600;
+    color: #fff; /* Warna teks putih untuk kontras */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.container .carousel-inner {
+    text-align: center; /* Memastikan konten di dalam carousel rata tengah */
+}

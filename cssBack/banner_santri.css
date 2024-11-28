@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --h50: #f0fdf4;
+  --h100: #dcfce7;
+  --h200: #bbf7d0;
+  --h300: #86efac;
+  --h400: #4ade80;
+  --h500: #22c55e;
+  --h600: #16a34a;
+  --h700: #15803d;
+  --h800: #166534;
+  --h900: #14532d;
+  --h950: #052e16;
+  --k500: #f59e0b;
+  --k400: #facc15;
+  --k300: #fbbf24;
+  --k250: #facc15;
+  --abu: #6b7280;
+}
+
+.main-content h1 {
+  font-size: 30px;
+  color: var(--h950);
+}
+.main-content h3 {
+  font-size: 20px;
+  color: var(--abu);
+}
+
+.animated-hr {
+  border: none;
+  height: 4px;
+  background-color: #000000; /* Warna terang */
+  box-shadow: 0 0 5px rgba(16, 177, 1, 0.6);
+  animation: moveLine 3s infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.cari {
+  display: flex;
+  justify-content: flex-end; /* Posisikan pencarian di sisi kanan */
+  margin: 20px; /* Tambahkan margin jika diperlukan */
+}
+.btn-secondary {
+  border: none;
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: #525252;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul form */
+.form-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--h950);
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 10px;
+}
+
+/* Label */
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--h900);
+  font-weight: 600;
+}
+
+/* Input text dan number */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--h700);
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  border-color: var(--h500);
+}
+
+/* Input file */
+.form-control-file {
+  display: block;
+  margin-top: 8px;
+}
+
+/* Tombol submit */
+.btn-submit {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--h600);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.btn-submit:hover {
+  background-color: var(--h800);
+}
+@keyframes majuBalikCepat {
+    0% {
+      transform: translateX(0) scaleX(1); /* Awal, posisi normal */
+    }
+    50% {
+      transform: translateX(600px) scaleX(1); /* Maju ke kanan */
+    }
+    51% {
+      transform: translateX(600px) scaleX(-1); /* Balik arah (flip horizontal) */
+    }
+    100% {
+      transform: translateX(0) scaleX(-1); /* Kembali ke awal */
+    }
+  }
+  
+  .maju-balik-cepat {
+    display: inline-block;
+    animation: majuBalikCepat 10s ease-in-out infinite; /* Durasi 2 detik */
+  }
+  .btn-tambah-banner {
+    background-color: #06b6d4;
+  }
+  .btn-tambah-banner:hover {
+    background-color: #0e7490;
+  }
+
+  .btn-kembali {
+    background-color: #16a34a;
+  }
+  .btn-kembali:hover {
+    background-color: #15803d;
+  }
+
+  .btn-edit {
+    background-color: yellow;
+    border: none;
+    color: var(--h950);
+  }
+  .btn-edit:hover {
+    background-color: #ca8a04;
+    color: white;
+  }
+  .btn-hapus {
+    background-color: red;
+    color: white;
+    border: none;
+  }
+  .btn-hapus:hover {
+    background-color: #b91c1c;
+    color: white;
+  }

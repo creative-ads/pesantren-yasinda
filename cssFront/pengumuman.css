@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+:root {
+  --h50: #f0fdf4;
+  --h100: #dcfce7;
+  --h200: #bbf7d0;
+  --h300: #86efac;
+  --h400: #4ade80;
+  --h500: #22c55e;
+  --h600: #16a34a;
+  --h700: #15803d;
+  --h800: #166534;
+  --h900: #14532d;
+  --h950: #052e16;
+  --k400: #fbbf24;
+}
+
+.content-santri {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.animated-hr {
+  border: none;
+  height: 4px;
+  background-color: #ffb109; /* Warna terang */
+  box-shadow: 0 0 5px rgba(16, 177, 1, 0.6);
+  animation: moveLine 5s infinite;
+}
+
+@keyframes moveLine {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 50%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.anm-hr {
+  border: none;
+  height: 4px;
+  background-color: #32c505; /* Warna terang */
+  box-shadow: 0 0 5px rgba(249, 125, 0, 0.6);
+  animation: moveRightToLeft 5s linear infinite; /* Animasi bergerak */
+}
+@keyframes moveRightToLeft {
+  0% {
+    transform: translateX(100%); /* Mulai dari kanan (di luar layar) */
+  }
+  100% {
+    transform: translateX(0); /* Berakhir di posisi normal */
+  }
+}
+
+.content-santri h1 {
+  font-weight: bold;
+}
+.content-santri .hone {
+  font-weight: bold;
+  text-align: center;
+  color: transparent;
+  cursor: default;
+  background: linear-gradient(45deg, #08ff18, #ffe203, #02721e, #83fb02);
+  background-size: 300%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+.section-background {
+  background-color: #dcfce7;
+}
+.one {
+  display: block;
+}
+
+.container.one h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--h950);
+}
+.container.one h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--h950);
+}
+
+.container.one p {
+  color: #474747; /* Warna teks */
+  line-height: 1.6; /* Spasi antar baris */
+  text-align: justify; /* Teks rata kanan dan kiri */
+  margin-bottom: 15px; /* Spasi di bawah paragraf */
+}
+
+.one hr {
+  border: 2px solid #1bff06;
+  height: 4px;
+  background-color: #32c505; /* Warna terang */
+  box-shadow: 0 0 5px rgba(253, 129, 5, 0.6);
+}

@@ -1,0 +1,143 @@
+:root {
+    --h50: #f0fdf4;
+    --h100: #dcfce7;
+    --h200: #bbf7d0;
+    --h300: #86efac;
+    --h400: #4ade80;
+    --h500: #22c55e;
+    --h600: #16a34a;
+    --h700: #15803d;
+    --h800: #166534;
+    --h900: #14532d;
+    --h950: #052e16;
+    --k400: #fbbf24;
+  }
+  
+.content-santri {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.animated-hr {
+    border: none;
+    height: 4px;
+    background-color: #ffb109; /* Warna terang */
+    box-shadow: 0 0 5px rgba(16, 177, 1, 0.6);
+    animation: moveLine 5s infinite;
+}
+
+@keyframes moveLine {
+    0% {
+        width: 0%;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+.anm-hr {
+    border: none;
+    height: 4px;
+    background-color: #32c505; /* Warna terang */
+    box-shadow: 0 0 5px rgba(249, 125, 0, 0.6);
+    animation: moveRightToLeft 5s linear infinite; /* Animasi bergerak */
+}
+@keyframes moveRightToLeft {
+    0% {
+        transform: translateX(100%); /* Mulai dari kanan (di luar layar) */
+    }
+    100% {
+        transform: translateX(0); /* Berakhir di posisi normal */
+    }
+}
+
+.content-santri h1 {
+    font-weight: bold;
+}
+.content-santri .hone {
+    font-weight: bold;
+    text-align: center;
+    color: transparent;
+    cursor: default;
+    background: linear-gradient(45deg, #08ff18, #ffe203, #02721e, #83fb02);
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: gradientMove 3s linear infinite;
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+
+.btn-group .btn-pres {
+    background-color: #08ff18;
+    color: white;
+    border: 2px solid #08ff18;
+}
+.btn-group .btn-pres:hover {
+    color: white;
+}
+
+.btn-group .btn-pel {
+    background-color: red;
+    color: white;
+    border: 2px solid red;
+}
+.btn-group .btn-pel:hover {
+    color: white;
+}
+.btn-group .btn-data {
+    background-color: blue;
+    color: white;
+    border: 2px solid blue;
+}
+.btn-group .btn-data:hover {
+    color: white;
+}
+.btn-group {
+    margin-bottom: 0;
+}
+
+.content-img {
+    margin-top: 0;
+}
+.carousel img {
+    max-height: 500px; /* Sesuaikan tinggi gambar */
+    object-fit: cover;
+}
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan untuk teks */
+    padding: 10px;
+    border-radius: 8px;
+}
+.carousel-inner {
+    padding: 20px; /* Memberikan jarak di sekitar carousel */
+}
+
+.carousel-item img {
+    border-radius: 10px; /* Membuat sudut gambar membulat */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    max-height: 500px; /* Membatasi tinggi gambar */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    margin: auto; /* Memusatkan gambar jika tidak penuh */
+}
+.carousel {
+    margin-top: 10px; /* Mengurangi jarak atas carousel */
+}
+
+.content-img {
+    padding-top: 0; /* Pastikan tidak ada padding tambahan pada section */
+}
+.teks h1{
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: var(--h950);
+}
